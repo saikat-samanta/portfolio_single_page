@@ -36,14 +36,37 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#banner">Home</a>
+            <li class="nav-item" id="nav_banner">
+              <a
+                class="nav-link"
+                href="#banner"
+                onclick="setNavClick('nav_banner')"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+            <li class="nav-item" id="nav_about">
+              <a
+                class="nav-link"
+                href="#about"
+                onclick="setNavClick('nav_about')"
+                >About</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item" id="nav_project">
+              <a
+                class="nav-link"
+                href="#project"
+                onclick="setNavClick('nav_project')"
+                >Project</a
+              >
+            </li>
+            <li class="nav-item" id="nav_contact">
+              <a
+                class="nav-link"
+                href="#contact"
+                onclick="setNavClick('nav_contact')"
+                >Contact</a
+              >
             </li>
           </ul>
           <div
@@ -122,6 +145,9 @@
     <section id="contact">
       <!-- contact section -->
     </section>
+    <footer id="footer">
+      <div class="text-center bg-warning">this is footer</div>
+    </footer>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

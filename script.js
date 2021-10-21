@@ -1,17 +1,22 @@
+/* selecting elements */
+const logo = document.getElementById("portfolio_logo");
+const navBar = document.querySelector(".navbar");
+const typeEl = document.querySelector(".type");
+
+window.onload = (ev) => {
+  window.location.hash = "#";
+  document.getElementById("nav_banner").classList.add("active");
+};
 AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 200, // offset (in px) from the original trigger point
-  delay: 50, // values from 0 to 3000, with step 50ms
+  offset: 100, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: "ease-in-out", // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 });
-/* selecting elements */
-const logo = document.getElementById("portfolio_logo");
-const navBar = document.querySelector(".navbar");
-const typeEl = document.querySelector(".type");
 
 /* add classes on starting */
 function initialization() {
@@ -19,6 +24,13 @@ function initialization() {
   navBar.classList.add(...["bg-light", "navbar-light"]);
 }
 initialization();
+
+function setNavClick(id) {
+  document.querySelectorAll(".nav-item").forEach((el) => {
+    el.classList.remove("active");
+  });
+  document.getElementById(id).classList.add("active");
+}
 
 /* Handle dark mode */
 function setDarkMode() {
