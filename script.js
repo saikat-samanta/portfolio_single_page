@@ -1,7 +1,7 @@
 AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 200, // offset (in px) from the original trigger point
-  delay: 50, // values from 0 to 3000, with step 50ms
+  offset: 100, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: "ease-in-out", // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
@@ -13,6 +13,12 @@ const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
 const typeEl = document.querySelector(".type");
 
+document.addEventListener("DOMContentLoaded", (ev) => {
+  const darkModeState = localStorage.getItem("isDarkMode");
+  document.getElementById("dark_mode").checked = JSON.parse(darkModeState);
+  setDarkMode();
+});
+
 /* add classes on starting */
 function initialization() {
   logo.setAttribute("src", "./assets/Saikat_dark.png");
@@ -23,6 +29,7 @@ initialization();
 /* Handle dark mode */
 function setDarkMode() {
   const checkBox = document.getElementById("dark_mode");
+  localStorage.setItem("isDarkMode", checkBox.checked);
   if (checkBox.checked === true) {
     logo.setAttribute("src", "./assets/Saikat_light.png");
     navBar.classList.remove(...["bg-light", "navbar-light"]);

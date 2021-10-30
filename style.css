@@ -155,3 +155,8 @@ section {
 #about_content embed {
   width: 80%;
 }
+
+.title {
+  font-size: 4rem;
+  text-shadow: 2px 2px 3px var(--activeNav);
+}
