@@ -1,3 +1,12 @@
+/* selecting elements */
+const logo = document.getElementById("portfolio_logo");
+const navBar = document.querySelector(".navbar");
+const typeEl = document.querySelector(".type");
+
+window.onload = (ev) => {
+  window.location.hash = "#";
+  document.getElementById("nav_banner").classList.add("active");
+};
 AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 100, // offset (in px) from the original trigger point
@@ -8,10 +17,6 @@ AOS.init({
   mirror: true, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 });
-/* selecting elements */
-const logo = document.getElementById("portfolio_logo");
-const navBar = document.querySelector(".navbar");
-const typeEl = document.querySelector(".type");
 
 document.addEventListener("DOMContentLoaded", (ev) => {
   const darkModeState = localStorage.getItem("isDarkMode");
@@ -25,6 +30,13 @@ function initialization() {
   navBar.classList.add(...["bg-light", "navbar-light"]);
 }
 initialization();
+
+function setNavClick(id) {
+  document.querySelectorAll(".nav-item").forEach((el) => {
+    el.classList.remove("active");
+  });
+  document.getElementById(id).classList.add("active");
+}
 
 /* Handle dark mode */
 function setDarkMode() {
