@@ -2,9 +2,11 @@
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
 const typeEl = document.querySelector(".type");
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".nav-item");
 
 window.onload = (ev) => {
-  window.location.hash = "#";
+  window.scrollTo({ top: 0, behavior: "smooth" });
   document.getElementById("nav_banner").classList.add("active");
 };
 AOS.init({
@@ -24,19 +26,30 @@ document.addEventListener("DOMContentLoaded", (ev) => {
   setDarkMode();
 });
 
+window.onscroll = () => {
+  let current = "banner";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.getAttribute("id") === `nav_${current}`) {
+      li.classList.add("active");
+    }
+  });
+};
+
 /* add classes on starting */
 function initialization() {
   logo.setAttribute("src", "./assets/Saikat_dark.png");
   navBar.classList.add(...["bg-light", "navbar-light"]);
 }
 initialization();
-
-function setNavClick(id) {
-  document.querySelectorAll(".nav-item").forEach((el) => {
-    el.classList.remove("active");
-  });
-  document.getElementById(id).classList.add("active");
-}
 
 /* Handle dark mode */
 function setDarkMode() {
