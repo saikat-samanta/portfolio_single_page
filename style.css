@@ -123,11 +123,6 @@ label:before {
 #banner {
   min-height: calc(100vh - var(--headerHight));
   margin-top: var(--headerHight);
-  background-image: url(./assets/banner_bg.svg);
-  background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  background-size: cover;
 }
 
 #banner_content {
