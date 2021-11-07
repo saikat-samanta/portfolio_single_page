@@ -1,3 +1,5 @@
+"use strict";
+
 /* selecting elements */
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
