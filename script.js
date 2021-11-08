@@ -9,6 +9,7 @@ const navLi = document.querySelectorAll(".nav-item");
 
 window.onload = (ev) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  window.location.hash = "banner";
   document.getElementById("nav_banner").classList.add("active");
 };
 AOS.init({

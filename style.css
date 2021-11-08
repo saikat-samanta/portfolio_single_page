@@ -26,6 +26,15 @@ p {
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
