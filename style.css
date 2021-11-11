@@ -72,7 +72,8 @@ nav a {
   transform: translateX(25px);
   background-color: var(--freshWhite) !important;
 }
-.fas {
+.fas,
+.far {
   color: var(--activeNav);
   font-size: larger;
 }
@@ -163,4 +164,200 @@ section {
 .title {
   font-size: 4rem;
   text-shadow: 2px 2px 3px var(--activeNav);
+}
+
+.form_container {
+  height: 100vh;
+  width: 100vw;
+}
+.contact_info {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.contact_link {
+  display: flex;
+}
+.contact_link i {
+  font-size: 1.2rem;
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 10px 0;
+}
+.contact_link p,
+.contact_link a {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  align-self: center;
+  text-decoration: none;
+}
+.from_area {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 95vw;
+  outline: 1px solid var(--darkBlack);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  outline-offset: -5px;
+}
+
+.form_img {
+  mix-blend-mode: multiply;
+  filter: opacity(0.2);
+  -webkit-filter: opacity(0.2);
+}
+
+.contact_form {
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#email,
+#text_area {
+  width: 95%;
+}
+
+.input_area {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input_area input,
+.input_area textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid red;
+  margin: auto 10px;
+  font-size: 1.2rem;
+  background: transparent;
+  resize: none;
+  transition: border-bottom 0.5s;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  -ms-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
+}
+
+.input_area span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  margin: auto 10px;
+  color: red;
+  pointer-events: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.input_area input:focus ~ span,
+.input_area textarea:focus ~ span {
+  top: -20px;
+  font-size: small;
+  color: red;
+}
+
+.input_area input:valid ~ span,
+.input_area textarea:valid ~ span {
+  top: -20px;
+  font-size: small;
+  color: green;
+}
+
+.input_area input:valid,
+.input_area textarea:valid {
+  border-bottom: 2px solid green;
+}
+
+.from_area .contact_form input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  border: 5px solid white;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: none;
+  box-shadow: -2px 2px 2px rgb(224, 224, 224), -7px 7px 2px rgb(138, 138, 138);
+}
+.from_area .contact_form input[type="submit"]:hover {
+  box-shadow: -3px 3px 5px rgb(214, 214, 214), -3px 3px 10px rgb(102, 102, 102),
+    inset -3px 3px 5px rgb(214, 214, 214),
+    inset -3px 3px 10px rgb(102, 102, 102);
+}
+@media only screen and (min-width: 620px) {
+  .from_area {
+    height: 320px;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    outline-offset: -10px;
+  }
+  .form_img {
+    display: none;
+  }
+  .input_area {
+    margin-bottom: 0;
+  }
+  .contact_form {
+    height: auto;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .contact_form .form_name {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .contact_link {
+    justify-content: center;
+  }
+  .from_area {
+    height: auto;
+    margin: 0 auto;
+  }
+  .form_img {
+    display: block;
+    clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
+    filter: none;
+    -webkit-filter: none;
+  }
+}
+
+#footer {
+  height: 30px;
 }
