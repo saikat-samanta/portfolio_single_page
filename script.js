@@ -7,6 +7,11 @@ const typeEl = document.querySelector(".type");
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-item");
 const footerYear = document.getElementById("cp-year");
+const formSubmitBtn = document.getElementById("submit-contact-msg");
+
+////////////// # Updating console //////////////
+
+console.info("%cYou are viewing Saikat's portfolio 🥳 🥳", "color: blue");
 
 //////////// # Inserting Footer year ///////////////
 
@@ -120,3 +125,16 @@ const typing = () => {
 };
 
 var myVar = setInterval(typing, speed);
+
+//////////// # Form submit ////////////
+formSubmitBtn.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  const formEl = document.forms.contact_form;
+  const formData = new FormData(formEl);
+  const contactDetails = {
+    name: `${formData.get("first_name")} ${formData.get("last_name")}`,
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+  console.log(contactDetails);
+});
