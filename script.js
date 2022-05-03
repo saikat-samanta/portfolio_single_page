@@ -7,6 +7,7 @@ const typeEl = document.querySelector(".type");
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-item");
 const footerYear = document.getElementById("cp-year");
+const contactForm = document.getElementById("contact_form");
 const formSubmitBtn = document.getElementById("submit-contact-msg");
 
 ////////////// # Updating console //////////////
@@ -137,4 +138,5 @@ formSubmitBtn.addEventListener("click", (ev) => {
     message: formData.get("message"),
   };
   console.log(contactDetails);
+  contactForm.reset();
 });
