@@ -1,17 +1,26 @@
 "use strict";
 
-/* selecting elements */
+////////////// # selecting elements //////////////////
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
 const typeEl = document.querySelector(".type");
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-item");
+const footerYear = document.getElementById("cp-year");
+
+//////////// # Inserting Footer year ///////////////
+
+footerYear.innerText = new Date().getFullYear();
+
+////////////// # On window load ////////////////
 
 window.onload = (ev) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
   window.location.hash = "";
   document.getElementById("nav_banner").classList.add("active");
 };
+
+////////////// # Initialize AOS ////////////////
 AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 100, // offset (in px) from the original trigger point
@@ -23,11 +32,15 @@ AOS.init({
   anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 });
 
+////////////// # On document load ////////////////
+
 document.addEventListener("DOMContentLoaded", (ev) => {
   const darkModeState = localStorage.getItem("isDarkMode");
   document.getElementById("dark_mode").checked = JSON.parse(darkModeState);
   setDarkMode();
 });
+
+////////////// # On window scroll ////////////////
 
 window.onscroll = () => {
   let current = "banner";
@@ -47,14 +60,16 @@ window.onscroll = () => {
   });
 };
 
-/* add classes on starting */
+//////////// # add classes on starting /////////////////
+
 function initialization() {
   logo.setAttribute("src", "./assets/Saikat_dark.png");
   navBar.classList.add(...["bg-light", "navbar-light"]);
 }
 initialization();
 
-/* Handle dark mode */
+////////////// # Handle dark mode ///////////////////
+
 function setDarkMode() {
   const checkBox = document.getElementById("dark_mode");
   localStorage.setItem("isDarkMode", checkBox.checked);
@@ -70,7 +85,8 @@ function setDarkMode() {
   }
 }
 
-/* Typing animation */
+////////////////// # Typing animation ////////////////////
+
 const contentArr = ["Developer", "Designer", "Freelancer"];
 let textString;
 let flag = false;

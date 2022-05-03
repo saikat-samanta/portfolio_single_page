@@ -1,385 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Latest compiled and minified CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Saikat's portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img id="portfolio_logo" alt="saikat_logo" width="75" height="75"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Saikat's portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="portfolio_logo" alt="saikat_logo" width="75" height="75" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="nav_banner">
+            <a class="nav-link" href="#banner">Home</a>
+          </li>
+          <li class="nav-item" id="nav_about">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item" id="nav_project">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item" id="nav_contact">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-link d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-sun pe-1"></i>
+          <div>
+            <input type="checkbox" id="dark_mode" onclick="setDarkMode()" />
+            <label for="dark_mode"></label>
+          </div>
+          <i class="fa-solid fa-moon ps-1"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="banner">
+    <div class="d-flex align-items-center row" id="banner_content">
+      <div data-aos="fade-right" class="col-12 col-md-6 d-flex flex-column align-items-center">
+        <h2 class="text-center">
+          H! i'm <br />
+          <span id="author_name">SAIKAT SAMANTA</span>
+        </h2>
+        <p id="type_writer">
+          a <span id="typing_bg">_<span class="type"></span></span>
+        </p>
+        <p class="mx-3 lead text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          et dolores repellat nemo ut provident.
+        </p>
+        <button class="btn btn-lg btn-outline-warning mt-3">
+          <a href="#contact">Ping me</a>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item" id="nav_banner">
-              <a class="nav-link" href="#banner">Home</a>
-            </li>
-            <li class="nav-item" id="nav_about">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item" id="nav_project">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item" id="nav_contact">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div
-            class="nav-link d-flex align-items-center justify-content-center"
-          >
-            <i class="fas fa-adjust pe-1"></i>
-            <div>
-              <input type="checkbox" id="dark_mode" onclick="setDarkMode()" />
-              <label for="dark_mode"></label>
-            </div>
-          </div>
-        </div>
       </div>
-    </nav>
-    <section id="banner">
-      <div class="d-flex align-items-center row" id="banner_content">
-        <div
-          data-aos="fade-right"
-          class="col-12 col-md-6 d-flex flex-column align-items-center"
-        >
-          <h2 class="text-center">
-            H! i'm <br />
-            <span id="author_name">SAIKAT SAMANTA</span>
-          </h2>
-          <p id="type_writer">
-            a <span id="typing_bg">_<span class="type"></span></span>
-          </p>
-          <p class="mx-3 lead text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            et dolores repellat nemo ut provident.
-          </p>
-          <button class="btn btn-lg btn-outline-warning mt-3">
-            <a href="#contact">Ping me</a>
-          </button>
-        </div>
-        <embed
-          data-aos="fade-left"
-          class="col-12 col-md-6"
-          src="assets/blob_banner.svg"
-          id="blob"
-        />
+      <embed data-aos="fade-left" class="col-12 col-md-6" src="assets/blob_banner.svg" id="blob" />
+    </div>
+  </section>
+  <section id="about">
+    <!-- About section -->
+    <div class="d-flex align-items-center row" id="about_content">
+      <div data-aos="fade-right" class="col-12 col-md-6 order-md-2">
+        <h1 class="text-center text-warning title">About</h1>
+        <p class="mx-3 display-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          maiores unde quos sapiente quo necessitatibus ducimus dolore beatae
+          soluta voluptate.
+        </p>
       </div>
-    </section>
-    <section id="about">
-      <!-- About section -->
-      <div class="d-flex align-items-center row" id="about_content">
-        <div data-aos="fade-right" class="col-12 col-md-6 order-md-2">
-          <h1 class="text-center text-warning title">About</h1>
-          <p class="mx-3 display-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            maiores unde quos sapiente quo necessitatibus ducimus dolore beatae
-            soluta voluptate.
-          </p>
-        </div>
-        <div
-          data-aos="fade-left"
-          class="col-12 col-md-6 order-md-1 d-flex justify-content-center"
-        >
-          <embed src="./assets/profile_info.svg" alt="profile_info" />
-        </div>
+      <div data-aos="fade-left" class="col-12 col-md-6 order-md-1 d-flex justify-content-center">
+        <embed src="./assets/profile_info.svg" alt="profile_info" />
       </div>
-    </section>
-    <section id="about" class="d-flex flex-column justify-content-around">
-      <!-- skill section -->
-      <h1 class="text-center text-warning title">Skill</h1>
-      <div class="row container-fluid">
-        <div class="col-12 col-md-6" data-aos="fade-right">
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Html</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-warning
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
+    </div>
+  </section>
+  <section id="about" class="d-flex flex-column justify-content-around">
+    <!-- skill section -->
+    <h1 class="text-center text-warning title">Skill</h1>
+    <div class="row container-fluid">
+      <div class="col-12 col-md-6" data-aos="fade-right">
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Html</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
             </div>
           </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>CSS3</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-success
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Javascript</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-warning
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Typescript</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-success
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Postgres SQL</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-warning
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
         </div>
-        <div class="col-12 col-md-6" data-aos="fade-left">
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>React JS</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>CSS3</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
             </div>
           </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Node JS</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-danger
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>React Native</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>Express JS</h5>
-            <div class="progress">
-              <div
-                class="
-                  progress-bar
-                  bg-danger
-                  progress-bar-striped progress-bar-animated
-                "
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
-          <!-- start of single progress bar -->
-          <div class="pb-4">
-            <h5>MongoDB</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 75%"
-              >
-                75%
-              </div>
-            </div>
-          </div>
-          <!-- end of single progress bar -->
         </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Javascript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Typescript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Postgres SQL</h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- end of single progress bar -->
       </div>
-    </section>
-    <section id="project">
-      <!-- project section -->
-    </section>
-    <section id="contact" class="d-flex flex-column justify-content-around">
-      <!-- contact section -->
-      <h1 class="text-center text-warning title">Contact</h1>
-      <div class="contact_info row" data-aos="fade-up">
-        <div class="contact_link col-12 col-md-4" id="location">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Kolkata, WestBengal-700040</p>
+      <div class="col-12 col-md-6" data-aos="fade-left">
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>React JS</h5>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
         </div>
-        <div class="contact_link col-12 col-md-4" id="mailid">
-          <i class="far fa-envelope"></i>
-          <a href="mailto:saikatsamanta737@gmail.com"
-            >saikatsamanta737@gmail.com</a
-          >
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Node JS</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
         </div>
-        <div class="contact_link col-12 col-md-4" id="phone_no">
-          <i class="fas fa-phone-square-alt"></i>
-          <a href="tel:+919851428741">+91 9851428741</a>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>React Native</h5>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
         </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>Express JS</h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- end of single progress bar -->
+        <!-- start of single progress bar -->
+        <div class="pb-4">
+          <h5>MongoDB</h5>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- end of single progress bar -->
       </div>
-      <div class="from_area" data-aos="fade-down">
-        <img
-          class="form_img"
-          src="./assets/contact_form_img.jpeg"
-          alt=""
-          height="500px"
-          width="400px"
-        />
-        <form
-          class="contact_form d-flex flex-column justify-content-evenly"
-          action=""
-          method="post"
-        >
-          <div class="form_name">
-            <div class="input_area">
-              <input type="text" name="name" id="first_name" required />
-              <span>First Name</span>
-            </div>
-            <div class="input_area">
-              <input type="text" name="name" id="last_name" required />
-              <span>Last Name</span>
-            </div>
+    </div>
+  </section>
+  <section id="project">
+    <!-- project section -->
+  </section>
+  <section id="contact" class="d-flex flex-column justify-content-around">
+    <!-- contact section -->
+    <h1 class="text-center text-warning title">Contact</h1>
+    <div class="contact_info row" data-aos="fade-up">
+      <div class="contact_link col-12 col-md-4" id="location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Kolkata, WestBengal-700040</p>
+      </div>
+      <div class="contact_link col-12 col-md-4" id="mailid">
+        <i class="far fa-envelope"></i>
+        <a href="mailto:saikatsamanta737@gmail.com">saikatsamanta737@gmail.com</a>
+      </div>
+      <div class="contact_link col-12 col-md-4" id="phone_no">
+        <i class="fas fa-phone-square-alt"></i>
+        <a href="tel:+919851428741">+91 9851428741</a>
+      </div>
+    </div>
+    <div class="from_area" data-aos="fade-down">
+      <img class="form_img" src="./assets/contact_form_img.jpeg" alt="" height="500px" width="400px" />
+      <form class="contact_form d-flex flex-column justify-content-evenly" action="" method="post">
+        <div class="form_name">
+          <div class="input_area">
+            <input type="text" name="name" id="first_name" required />
+            <span>First Name</span>
           </div>
           <div class="input_area">
-            <input type="email" name="email" id="email" required />
-            <span>Email</span>
+            <input type="text" name="name" id="last_name" required />
+            <span>Last Name</span>
           </div>
-          <div class="input_area">
-            <textarea name="" id="text_area" required></textarea>
-            <span>Write Your Message</span>
-          </div>
-          <input type="submit" value="SUBMIT" />
-        </form>
-      </div>
-    </section>
-    <footer id="footer" class="bg-warning mt-2">
-      <div class="text-center">this is footer</div>
-    </footer>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./script.js"></script>
-  </body>
+        </div>
+        <div class="input_area">
+          <input type="email" name="email" id="email" required />
+          <span>Email</span>
+        </div>
+        <div class="input_area">
+          <textarea name="" id="text_area" required></textarea>
+          <span>Write Your Message</span>
+        </div>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
+  </section>
+  <footer id="footer" class="row bg-warning mt-2 px-2 py-3 d-flex align-items-center">
+    <div class="col-xl-10 col-lg-9 col-md-8 col-sm-12">
+      © <span id="cp-year"></span> Saikat Samanta
+    </div>
+    <div id="social-link" class=" col-xl-2 col-lg-3 col-md-4 col-sm-12 text-center">
+      <a href="https://www.linkedin.com/in/saikat-samanta-a38828a9"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/saikat-samanta"><i class="fa-brands fa-github"></i></a>
+      <a href="http://m.me/saikat.samanta.796"><i class="fa-brands fa-facebook-messenger"></i></a>
+      <a href="https://wa.me/919851428741/?text=Hi%20Saikat!"><i class="fa-brands fa-whatsapp-square"></i></a>
+    </div>
+  </footer>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

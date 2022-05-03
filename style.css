@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-/******* Variables ********/
+
+/* ! Variables */
+
 :root {
-  /**** colors ****/
+  /* ! colors */
   --darkBlack: #000;
   --freshWhite: #fff;
   --darkModeBg: #495057;
   --darkModeText: rgb(85.099792%, 85.099792%, 85.099792%);
   --activeNav: #ffae00;
 
-  /***** values *****/
+  /* ! values */
   --headerHight: 110px;
 }
-/******* Variables end ********/
 
-/********** Global styles **********/
+/* ! Variables end */
+
+/* ! Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +42,7 @@ html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
-/********** Global styles end **********/
+/* ! Global styles end */
 
 .dark_mode {
   background-color: var(--darkModeBg) !important;
@@ -72,7 +75,7 @@ nav a {
   transform: translateX(25px);
   background-color: var(--freshWhite) !important;
 }
-.fas,
+.fa-solid,
 .far {
   color: var(--activeNav);
   font-size: larger;
@@ -358,6 +361,27 @@ section {
   }
 }
 
-#footer {
-  height: 30px;
+@media only screen and (max-width: 767px) {
+  #footer {
+    text-align: center;
+  }
+}
+
+#social-link i {
+  margin: 0 5px;
+}
+
+#social-link a i {
+  font-size: 28px;
+  text-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
+}
+
+i.fa-linkedin {
+  color: #0a66c2;
+}
+i.fa-facebook-messenger {
+  color: #1877f2;
+}
+i.fa-whatsapp-square {
+  color: #41e95f;
 }
