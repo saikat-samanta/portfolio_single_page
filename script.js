@@ -127,6 +127,26 @@ const typing = () => {
 
 var myVar = setInterval(typing, speed);
 
+//////////// # Send message ////////////
+
+function sendEmail({ name, email, message }) {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "sender@email_address.com",
+    Password: "Enter your password",
+    To: "receiver@email_address.com",
+    From: "sender@email_address.com",
+    Subject: "Contact Request",
+    Body: `<h1>Name:</h1><p>${name}</p> <br> <h1>Email:</h1><p>${email}</p> <br> <h1>Message:</h1><p>${message}</p>`,
+  })
+    .then(() => {
+      alert("Message sent successfully");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
 //////////// # Form submit ////////////
 formSubmitBtn.addEventListener("click", (ev) => {
   ev.preventDefault();
