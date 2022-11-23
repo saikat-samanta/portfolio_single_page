@@ -71,8 +71,11 @@
         </div>
       </div>
     </nav>
-    <section id="banner">
-      <div class="d-flex align-items-center row" id="banner_content">
+    <section
+      id="banner"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <div class="d-flex align-items-center row w-100">
         <div
           data-aos="fade-right"
           class="col-12 col-md-6 d-flex flex-column align-items-center"
@@ -92,17 +95,20 @@
             <a href="#contact">Ping me</a>
           </button>
         </div>
-        <embed
+        <div
           data-aos="fade-left"
-          class="col-12 col-md-6"
-          src="assets/blob_banner.svg"
-          id="blob"
-        />
+          class="col-12 col-md-6 pt-1 d-flex justify-content-center"
+        >
+          <embed width="90%" src="assets/blob_banner.svg" id="blob" />
+        </div>
       </div>
     </section>
-    <section id="about">
+    <section
+      id="about"
+      class="d-flex align-items-center justify-content-center"
+    >
       <!-- About section -->
-      <div class="d-flex align-items-center row" id="about_content">
+      <div class="d-flex align-items-center row w-100">
         <div data-aos="fade-right" class="col-12 col-md-6 order-md-2">
           <h1 class="text-center text-warning title">About</h1>
           <p class="mx-3 display-6">
@@ -121,16 +127,20 @@
           data-aos="fade-left"
           class="col-12 col-md-6 order-md-1 d-flex justify-content-center"
         >
-          <embed src="./assets/profile_info.svg" alt="profile_info" />
+          <embed
+            width="90%"
+            src="./assets/profile_info.svg"
+            alt="profile_info"
+          />
         </div>
       </div>
     </section>
-    <section id="skill">
+    <section id="skill" class="d-flex flex-column">
       <!-- skill section -->
       <h1 class="text-center text-warning title">Skill</h1>
       <div
         class="d-flex align-items-center justify-content-center"
-        id="skill_content"
+        style="flex: 1"
       >
         <div class="row container-fluid">
           <div class="col-12 col-md-6" data-aos="fade-right">
@@ -310,19 +320,21 @@
         </div>
       </div>
     </section>
-    <section id="project">
+    <section id="project" class="d-flex flex-column">
       <!-- project section -->
-      <div id="project_content">
-        <h1 class="text-center text-warning title">Projects</h1>
-      </div>
-    </section>
-    <section id="contact">
-      <!-- contact section -->
+      <h1 class="text-center text-warning title">Projects</h1>
       <div
-        class="d-flex flex-column justify-content-around"
-        id="project_content"
+        class="d-flex align-items-center justify-content-center"
+        style="flex: 1"
+      ></div>
+    </section>
+    <section id="contact" class="d-flex flex-column">
+      <!-- contact section -->
+      <h1 class="text-center text-warning title">Contact</h1>
+      <div
+        class="d-flex flex-column align-items-center justify-content-around"
+        style="flex: 1"
       >
-        <h1 class="text-center text-warning title">Contact</h1>
         <div class="contact_info row" data-aos="fade-up">
           <div class="contact_link col-12 col-md-4" id="location">
             <i class="fas fa-map-marker-alt"></i>

@@ -139,7 +139,7 @@ label:before {
 }
 
 section {
-  min-height: calc(100vh - var(--headerHight));
+  min-height: 100vh;
   padding-top: var(--headerHight);
   overflow: hidden;
   background-image: url(./assets/banner_bg.svg);
@@ -149,24 +149,12 @@ section {
   background-size: cover;
 }
 
-#banner_content {
-  height: 100vh;
-}
-
 #blob {
   height: 60%;
 }
 
-#about_content {
-  min-height: 100vh;
-}
-
 #about_content embed {
   width: 80%;
-}
-
-#skill_content {
-  min-height: 100vh;
 }
 
 .title {
