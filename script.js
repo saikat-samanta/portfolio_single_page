@@ -9,6 +9,7 @@ const navLi = document.querySelectorAll(".nav-item");
 const footerYear = document.getElementById("cp-year");
 const contactForm = document.getElementById("contact_form");
 const formSubmitBtn = document.getElementById("submit-contact-msg");
+const formSubmitStatus = document.getElementById("email_response_status");
 
 ////////////// # Updating console //////////////
 
@@ -130,19 +131,25 @@ var myVar = setInterval(typing, speed);
 //////////// # Send message ////////////
 
 function sendEmail({ name, email, message }) {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "sender@email_address.com",
-    Password: "Enter your password",
-    To: "receiver@email_address.com",
-    From: "sender@email_address.com",
-    Subject: "Contact Request",
-    Body: `<h1>Name:</h1><p>${name}</p> <br> <h1>Email:</h1><p>${email}</p> <br> <h1>Message:</h1><p>${message}</p>`,
+  fetch("https://formspree.io/f/maykzywj", {
+    method: "POST",
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    body: JSON.stringify({ name, email, message }),
   })
     .then(() => {
-      alert("Message sent successfully");
+      formSubmitStatus.setAttribute(
+        "style",
+        "background-color: green;color: white;width: max-content;padding: 0 5px;"
+      );
+      formSubmitStatus.innerText = "Submitted successfully.";
     })
     .catch((error) => {
+      formSubmitStatus.setAttribute(
+        "style",
+        "background-color: red;color: white;width: max-content;padding: 0 5px;"
+      );
+      formSubmitStatus.innerText = "Form submission failed.";
       console.error(error);
     });
 }
@@ -157,6 +164,7 @@ formSubmitBtn.addEventListener("click", (ev) => {
     email: formData.get("email"),
     message: formData.get("message"),
   };
+  sendEmail(contactDetails);
   console.log(contactDetails);
   contactForm.reset();
 });

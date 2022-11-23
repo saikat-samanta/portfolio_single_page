@@ -336,8 +336,6 @@
         <form
           class="contact_form d-flex flex-column justify-content-evenly"
           id="contact_form"
-          action=""
-          method="post"
         >
           <div class="form_name">
             <div class="input_area">
@@ -357,6 +355,7 @@
             <textarea name="message" id="text_area" required></textarea>
             <span>Write Your Message</span>
           </div>
+          <span id="email_response_status"></span>
           <input type="submit" value="SUBMIT" id="submit-contact-msg" />
         </form>
       </div>
@@ -390,6 +389,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
