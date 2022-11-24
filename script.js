@@ -10,6 +10,10 @@ const footerYear = document.getElementById("cp-year");
 const contactForm = document.getElementById("contact_form");
 const formSubmitBtn = document.getElementById("submit-contact-msg");
 const formSubmitStatus = document.getElementById("email_response_status");
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
 ////////////// # Updating console //////////////
 
@@ -127,6 +131,17 @@ const typing = () => {
 };
 
 var myVar = setInterval(typing, speed);
+
+//////////// # carousal //////////
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});
 
 //////////// # Send message ////////////
 
