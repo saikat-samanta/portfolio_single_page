@@ -168,7 +168,7 @@ section {
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: hidden;
   list-style: none;
   margin: 0;
   padding: 0;
