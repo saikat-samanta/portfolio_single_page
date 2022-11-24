@@ -232,6 +232,14 @@ section {
   background-color: #da6e2b2a;
 }
 
+.slide:nth-child(5) {
+  background-color: #3bb7a42a;
+}
+
+.slide:nth-child(6) {
+  background-color: #c23e842a;
+}
+
 .form_container {
   height: 100vh;
   width: 100vw;
