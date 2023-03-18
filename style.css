@@ -215,6 +215,15 @@ section {
   flex: 1 0 100%;
 }
 
+.slide div {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.slide div::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .slide:nth-child(1) {
   background-color: #49b2923a;
 }
