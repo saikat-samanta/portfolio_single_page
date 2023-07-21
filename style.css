@@ -66,7 +66,7 @@ nav {
 }
 
 nav a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 #dark_mode {
@@ -247,6 +247,10 @@ section {
 
 .slide:nth-child(6) {
   background-color: #c23e842a;
+}
+
+.slide:nth-child(7) {
+  background-color: #6a478f3d;
 }
 
 .form_container {
