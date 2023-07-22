@@ -219,11 +219,12 @@ function sendEmail({ _0x9831x22, _0x9831x23, _0x9831x24 }) {
     method: _0xca87[82],
     mode: _0xca87[83],
     cache: _0xca87[84],
-    body: JSON[_0xca87[85]]({ name, email, message }),
+    body: JSON[_0xca87[85]]({ _0x9831x22, _0x9831x23, _0x9831x24 }),
   })
     [_0xca87[80]](() => {
       formSubmitStatus[_0xca87[57]](_0xca87[73], _0xca87[78]);
       formSubmitStatus[_0xca87[26]] = _0xca87[79];
+      contactForm[_0xca87[95]]();
     })
     [_0xca87[77]]((_0x9831x25) => {
       formSubmitStatus[_0xca87[57]](_0xca87[73], _0xca87[74]);
@@ -244,5 +245,4 @@ formSubmitBtn[_0xca87[25]](_0xca87[70], (_0x9831xf) => {
   };
   sendEmail(_0x9831x28);
   console[_0xca87[94]](_0x9831x28);
-  contactForm[_0xca87[95]]();
 });

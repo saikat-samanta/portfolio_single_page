@@ -1,5 +1,6 @@
 "use strict";
 
+// https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx
 ////////////// # selecting elements //////////////////
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
@@ -182,6 +183,7 @@ function sendEmail({ name, email, message }) {
         "background-color: green;color: white;width: max-content;padding: 0 5px;"
       );
       formSubmitStatus.innerText = "Submitted successfully.";
+      contactForm.reset();
     })
     .catch((error) => {
       formSubmitStatus.setAttribute(
@@ -205,5 +207,4 @@ formSubmitBtn.addEventListener("click", (ev) => {
   };
   sendEmail(contactDetails);
   console.log(contactDetails);
-  contactForm.reset();
 });
