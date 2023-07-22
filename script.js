@@ -173,7 +173,7 @@ prevButton.addEventListener("click", () => {
 function sendEmail({ name, email, message }) {
   fetch("https://formspree.io/f/maykzywj", {
     method: "POST",
-    mode: "cors", // no-cors, *cors, same-origin
+    mode: "no-cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     body: JSON.stringify({ name, email, message }),
   })
