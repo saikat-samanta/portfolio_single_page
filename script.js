@@ -180,7 +180,7 @@ function sendEmail({ name, email, message }) {
     .then(() => {
       formSubmitStatus.setAttribute(
         "style",
-        "background-color: green;color: white;width: max-content;padding: 0 5px;"
+        "background-color: green;color: white;width: max-content;padding: 0 5px;margin: 0 5px;"
       );
       formSubmitStatus.innerText = "Submitted successfully.";
       contactForm.reset();
@@ -188,7 +188,7 @@ function sendEmail({ name, email, message }) {
     .catch((error) => {
       formSubmitStatus.setAttribute(
         "style",
-        "background-color: red;color: white;width: max-content;padding: 0 5px;"
+        "background-color: red;color: white;width: max-content;padding: 0 5px; margin: 0 5px;"
       );
       formSubmitStatus.innerText = "Form submission failed.";
       console.error(error);
