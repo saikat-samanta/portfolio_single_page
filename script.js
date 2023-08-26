@@ -202,9 +202,14 @@ formSubmitBtn.addEventListener("click", (ev) => {
   const formData = new FormData(formEl);
   const contactDetails = {
     name: `${formData.get("first_name")} ${formData.get("last_name")}`,
-    email: formData.get("email"),
+    email: formData.get("my_email"),
     message: formData.get("message"),
   };
+  const hiddenData = formData.get("email");
+  if (hiddenData) {
+    console.log("Don't spamming mother f**ker.");
+    return;
+  }
   sendEmail(contactDetails);
   console.log(contactDetails);
 });

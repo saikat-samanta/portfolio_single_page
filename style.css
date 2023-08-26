@@ -319,7 +319,11 @@ section {
   -o-transform: translate(-50%, -50%);
 }
 
-#email,
+.spam_email {
+  display: none;
+}
+
+#my_email,
 #text_area {
   width: 95%;
 }
