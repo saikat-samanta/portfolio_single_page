@@ -43,6 +43,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapsibleNavbar"
+          aria-label="navigation menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -165,6 +166,7 @@
                   aria-valuenow="50"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="HTML"
                   style="width: 50%"
                 >
                   50%
@@ -182,6 +184,7 @@
                   aria-valuenow="60"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="CSS3"
                   style="width: 60%"
                 >
                   60%
@@ -199,6 +202,7 @@
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="JavaScript"
                   style="width: 75%"
                 >
                   75%
@@ -216,6 +220,7 @@
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Typescript"
                   style="width: 75%"
                 >
                   75%
@@ -233,6 +238,7 @@
                   aria-valuenow="65"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Postgresql"
                   style="width: 65%"
                 >
                   65%
@@ -250,6 +256,7 @@
                   aria-valuenow="60"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="MongoDB"
                   style="width: 60%"
                 >
                   60%
@@ -269,6 +276,7 @@
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="React JS"
                   style="width: 75%"
                 >
                   75%
@@ -286,6 +294,7 @@
                   aria-valuenow="70"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Node JS"
                   style="width: 70%"
                 >
                   70%
@@ -303,6 +312,7 @@
                   aria-valuenow="70"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="React Native"
                   style="width: 70%"
                 >
                   70%
@@ -320,6 +330,7 @@
                   aria-valuenow="65"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Express JS"
                   style="width: 65%"
                 >
                   65%
@@ -337,6 +348,7 @@
                   aria-valuenow="70"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Next JS"
                   style="width: 70%"
                 >
                   70%
@@ -354,6 +366,7 @@
                   aria-valuenow="60"
                   aria-valuemin="0"
                   aria-valuemax="100"
+                  aria-label="Webpack"
                   style="width: 60%"
                 >
                   60%
@@ -661,24 +674,24 @@
           >
             <div class="form_name">
               <div class="input_area">
-                <input type="text" name="first_name" id="first_name" required />
+                <input type="text" name="first_name" id="first_name" aria-label="first name" required />
                 <span>First Name*</span>
               </div>
               <div class="input_area">
-                <input type="text" name="last_name" id="last_name" required />
+                <input type="text" name="last_name" id="last_name" aria-label="last name" required />
                 <span>Last Name*</span>
               </div>
             </div>
             <div class="input_area spam_email">
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" aria-label="spam email"/>
               <span>Email</span>
             </div>
             <div class="input_area">
-              <input type="email" name="my_email" id="my_email" required />
+              <input type="email" name="my_email" id="my_email" aria-label="email" required />
               <span>Email*</span>
             </div>
             <div class="input_area">
-              <textarea name="message" id="text_area" required></textarea>
+              <textarea name="message" id="text_area" aria-label="message" required></textarea>
               <span>Write Your Message*</span>
             </div>
             <span id="email_response_status"></span>
