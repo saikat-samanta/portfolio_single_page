@@ -1,6 +1,6 @@
+// https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx
 "use strict";
 
-// https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx
 ////////////// # selecting elements //////////////////
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
@@ -9,7 +9,6 @@ const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".nav-item");
 const footerYear = document.getElementById("cp-year");
 const contactForm = document.getElementById("contact_form");
-const formSubmitBtn = document.getElementById("submit-contact-msg");
 const formSubmitStatus = document.getElementById("email_response_status");
 const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
@@ -170,12 +169,24 @@ prevButton.addEventListener("click", () => {
 
 //////////// # Send message ////////////
 
-function sendEmail({ name, email, message }) {
+function sendEmail(data) {
+  if (!data.name.trim() || !data.email.trim() || !data.message.trim()) {
+    formSubmitStatus.setAttribute(
+      "style",
+      "background-color: red;color: white;width: max-content;padding: 0 5px; margin: 0 5px;"
+    );
+    formSubmitStatus.innerText = "Please fill all required fields.";
+    return;
+  }
   fetch("https://formspree.io/f/maykzywj", {
     method: "POST",
     mode: "no-cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    body: JSON.stringify({ name, email, message }),
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    }),
   })
     .then(() => {
       formSubmitStatus.setAttribute(
@@ -196,12 +207,13 @@ function sendEmail({ name, email, message }) {
 }
 
 //////////// # Form submit ////////////
-formSubmitBtn.addEventListener("click", (ev) => {
+contactForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  const formEl = document.forms.contact_form;
-  const formData = new FormData(formEl);
+  const formData = new FormData(ev.target);
   const contactDetails = {
-    name: `${formData.get("first_name")} ${formData.get("last_name")}`,
+    name: `${
+      formData.get("first_name") ? formData.get("first_name") + " " : ""
+    }${formData.get("last_name")}`,
     email: formData.get("my_email"),
     message: formData.get("message"),
   };

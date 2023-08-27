@@ -1,4 +1,4 @@
-var _0x6eb6 = [
+var _0xa9f2 = [
   "\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74",
   "\x70\x6F\x72\x74\x66\x6F\x6C\x69\x6F\x5F\x6C\x6F\x67\x6F",
   "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64",
@@ -10,7 +10,6 @@ var _0x6eb6 = [
   "\x2E\x6E\x61\x76\x2D\x69\x74\x65\x6D",
   "\x63\x70\x2D\x79\x65\x61\x72",
   "\x63\x6F\x6E\x74\x61\x63\x74\x5F\x66\x6F\x72\x6D",
-  "\x73\x75\x62\x6D\x69\x74\x2D\x63\x6F\x6E\x74\x61\x63\x74\x2D\x6D\x73\x67",
   "\x65\x6D\x61\x69\x6C\x5F\x72\x65\x73\x70\x6F\x6E\x73\x65\x5F\x73\x74\x61\x74\x75\x73",
   "\x73\x6C\x69\x64\x65\x73\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72",
   "\x2E\x73\x6C\x69\x64\x65",
@@ -72,8 +71,13 @@ var _0x6eb6 = [
   "\x63\x6C\x69\x63\x6B",
   "\x63\x6C\x69\x65\x6E\x74\x57\x69\x64\x74\x68",
   "\x73\x63\x72\x6F\x6C\x6C\x4C\x65\x66\x74",
+  "\x74\x72\x69\x6D",
+  "\x6E\x61\x6D\x65",
+  "\x65\x6D\x61\x69\x6C",
+  "\x6D\x65\x73\x73\x61\x67\x65",
   "\x73\x74\x79\x6C\x65",
   "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72\x3A\x20\x72\x65\x64\x3B\x63\x6F\x6C\x6F\x72\x3A\x20\x77\x68\x69\x74\x65\x3B\x77\x69\x64\x74\x68\x3A\x20\x6D\x61\x78\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x3B\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x30\x20\x35\x70\x78\x3B\x20\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x20\x35\x70\x78\x3B",
+  "\x50\x6C\x65\x61\x73\x65\x20\x66\x69\x6C\x6C\x20\x61\x6C\x6C\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x66\x69\x65\x6C\x64\x73\x2E",
   "\x46\x6F\x72\x6D\x20\x73\x75\x62\x6D\x69\x73\x73\x69\x6F\x6E\x20\x66\x61\x69\x6C\x65\x64\x2E",
   "\x65\x72\x72\x6F\x72",
   "\x63\x61\x74\x63\x68",
@@ -86,96 +90,92 @@ var _0x6eb6 = [
   "\x6E\x6F\x2D\x63\x6F\x72\x73",
   "\x6E\x6F\x2D\x63\x61\x63\x68\x65",
   "\x73\x74\x72\x69\x6E\x67\x69\x66\x79",
+  "\x73\x75\x62\x6D\x69\x74",
   "\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74",
-  "\x66\x6F\x72\x6D\x73",
   "\x66\x69\x72\x73\x74\x5F\x6E\x61\x6D\x65",
   "\x67\x65\x74",
   "\x20",
   "\x6C\x61\x73\x74\x5F\x6E\x61\x6D\x65",
   "\x6D\x79\x5F\x65\x6D\x61\x69\x6C",
-  "\x6D\x65\x73\x73\x61\x67\x65",
-  "\x65\x6D\x61\x69\x6C",
   "\x44\x6F\x6E\x27\x74\x20\x73\x70\x61\x6D\x6D\x69\x6E\x67\x20\x6D\x6F\x74\x68\x65\x72\x20\x66\x2A\x2A\x6B\x65\x72\x2E",
   "\x6C\x6F\x67",
 ];
-_0x6eb6[0];
-const logo = document[_0x6eb6[2]](_0x6eb6[1]);
-const navBar = document[_0x6eb6[4]](_0x6eb6[3]);
-const typeEl = document[_0x6eb6[4]](_0x6eb6[5]);
-const sections = document[_0x6eb6[7]](_0x6eb6[6]);
-const navLi = document[_0x6eb6[7]](_0x6eb6[8]);
-const footerYear = document[_0x6eb6[2]](_0x6eb6[9]);
-const contactForm = document[_0x6eb6[2]](_0x6eb6[10]);
-const formSubmitBtn = document[_0x6eb6[2]](_0x6eb6[11]);
-const formSubmitStatus = document[_0x6eb6[2]](_0x6eb6[12]);
-const slidesContainer = document[_0x6eb6[2]](_0x6eb6[13]);
-const slide = document[_0x6eb6[4]](_0x6eb6[14]);
-const prevButton = document[_0x6eb6[2]](_0x6eb6[15]);
-const nextButton = document[_0x6eb6[2]](_0x6eb6[16]);
-document[_0x6eb6[25]](_0x6eb6[17], (_0x79c0xe) => {
-  if (_0x79c0xe[_0x6eb6[19]][_0x6eb6[18]] === _0x6eb6[20]) {
-    console[_0x6eb6[24]](_0x6eb6[21], _0x6eb6[22], _0x6eb6[23]);
+_0xa9f2[0];
+const logo = document[_0xa9f2[2]](_0xa9f2[1]);
+const navBar = document[_0xa9f2[4]](_0xa9f2[3]);
+const typeEl = document[_0xa9f2[4]](_0xa9f2[5]);
+const sections = document[_0xa9f2[7]](_0xa9f2[6]);
+const navLi = document[_0xa9f2[7]](_0xa9f2[8]);
+const footerYear = document[_0xa9f2[2]](_0xa9f2[9]);
+const contactForm = document[_0xa9f2[2]](_0xa9f2[10]);
+const formSubmitStatus = document[_0xa9f2[2]](_0xa9f2[11]);
+const slidesContainer = document[_0xa9f2[2]](_0xa9f2[12]);
+const slide = document[_0xa9f2[4]](_0xa9f2[13]);
+const prevButton = document[_0xa9f2[2]](_0xa9f2[14]);
+const nextButton = document[_0xa9f2[2]](_0xa9f2[15]);
+document[_0xa9f2[24]](_0xa9f2[16], (_0xc7fexd) => {
+  if (_0xc7fexd[_0xa9f2[18]][_0xa9f2[17]] === _0xa9f2[19]) {
+    console[_0xa9f2[23]](_0xa9f2[20], _0xa9f2[21], _0xa9f2[22]);
   }
 });
-footerYear[_0x6eb6[26]] = new Date()[_0x6eb6[27]]();
-window[_0x6eb6[28]] = (_0x79c0xf) => {
-  window[_0x6eb6[30]]({ top: 0, behavior: _0x6eb6[29] });
-  window[_0x6eb6[32]][_0x6eb6[31]] = _0x6eb6[33];
-  document[_0x6eb6[2]](_0x6eb6[37])[_0x6eb6[36]][_0x6eb6[35]](_0x6eb6[34]);
+footerYear[_0xa9f2[25]] = new Date()[_0xa9f2[26]]();
+window[_0xa9f2[27]] = (_0xc7fexe) => {
+  window[_0xa9f2[29]]({ top: 0, behavior: _0xa9f2[28] });
+  window[_0xa9f2[31]][_0xa9f2[30]] = _0xa9f2[32];
+  document[_0xa9f2[2]](_0xa9f2[36])[_0xa9f2[35]][_0xa9f2[34]](_0xa9f2[33]);
 };
-AOS[_0x6eb6[40]]({
+AOS[_0xa9f2[39]]({
   offset: 0,
   delay: 0,
   duration: 1000,
-  easing: _0x6eb6[38],
+  easing: _0xa9f2[37],
   once: false,
   mirror: true,
-  anchorPlacement: _0x6eb6[39],
+  anchorPlacement: _0xa9f2[38],
 });
-document[_0x6eb6[25]](_0x6eb6[41], (_0x79c0xf) => {
-  const _0x79c0x10 = localStorage[_0x6eb6[43]](_0x6eb6[42]);
-  document[_0x6eb6[2]](_0x6eb6[45])[_0x6eb6[44]] =
-    JSON[_0x6eb6[46]](_0x79c0x10);
+document[_0xa9f2[24]](_0xa9f2[40], (_0xc7fexe) => {
+  const _0xc7fexf = localStorage[_0xa9f2[42]](_0xa9f2[41]);
+  document[_0xa9f2[2]](_0xa9f2[44])[_0xa9f2[43]] = JSON[_0xa9f2[45]](_0xc7fexf);
   setDarkMode();
 });
-window[_0x6eb6[47]] = () => {
-  let _0x79c0x11 = _0x6eb6[48];
-  sections[_0x6eb6[52]]((_0x79c0x12) => {
-    const _0x79c0x13 = _0x79c0x12[_0x6eb6[49]];
-    if (scrollY >= _0x79c0x13 - 1) {
-      _0x79c0x11 = _0x79c0x12[_0x6eb6[51]](_0x6eb6[50]);
+window[_0xa9f2[46]] = () => {
+  let _0xc7fex10 = _0xa9f2[47];
+  sections[_0xa9f2[51]]((_0xc7fex11) => {
+    const _0xc7fex12 = _0xc7fex11[_0xa9f2[48]];
+    if (scrollY >= _0xc7fex12 - 1) {
+      _0xc7fex10 = _0xc7fex11[_0xa9f2[50]](_0xa9f2[49]);
     }
   });
-  navLi[_0x6eb6[52]]((_0x79c0x14) => {
-    _0x79c0x14[_0x6eb6[36]][_0x6eb6[53]](_0x6eb6[34]);
+  navLi[_0xa9f2[51]]((_0xc7fex13) => {
+    _0xc7fex13[_0xa9f2[35]][_0xa9f2[52]](_0xa9f2[33]);
     if (
-      _0x79c0x14[_0x6eb6[51]](_0x6eb6[50]) ===
-      _0x6eb6[54] + _0x79c0x11 + _0x6eb6[33]
+      _0xc7fex13[_0xa9f2[50]](_0xa9f2[49]) ===
+      _0xa9f2[53] + _0xc7fex10 + _0xa9f2[32]
     ) {
-      _0x79c0x14[_0x6eb6[36]][_0x6eb6[35]](_0x6eb6[34]);
+      _0xc7fex13[_0xa9f2[35]][_0xa9f2[34]](_0xa9f2[33]);
     }
   });
 };
 function initialization() {
-  logo[_0x6eb6[57]](_0x6eb6[55], _0x6eb6[56]);
-  navBar[_0x6eb6[36]][_0x6eb6[35]](...[_0x6eb6[58], _0x6eb6[59]]);
+  logo[_0xa9f2[56]](_0xa9f2[54], _0xa9f2[55]);
+  navBar[_0xa9f2[35]][_0xa9f2[34]](...[_0xa9f2[57], _0xa9f2[58]]);
 }
 initialization();
 function setDarkMode() {
-  const _0x79c0x17 = document[_0x6eb6[2]](_0x6eb6[45]);
-  localStorage[_0x6eb6[60]](_0x6eb6[42], _0x79c0x17[_0x6eb6[44]]);
-  if (_0x79c0x17[_0x6eb6[44]] === true) {
-    logo[_0x6eb6[57]](_0x6eb6[55], _0x6eb6[61]);
-    navBar[_0x6eb6[36]][_0x6eb6[53]](...[_0x6eb6[58], _0x6eb6[59]]);
-    navBar[_0x6eb6[36]][_0x6eb6[35]](...[_0x6eb6[62], _0x6eb6[63]]);
-    document[_0x6eb6[64]][_0x6eb6[36]][_0x6eb6[35]](_0x6eb6[45]);
+  const _0xc7fex16 = document[_0xa9f2[2]](_0xa9f2[44]);
+  localStorage[_0xa9f2[59]](_0xa9f2[41], _0xc7fex16[_0xa9f2[43]]);
+  if (_0xc7fex16[_0xa9f2[43]] === true) {
+    logo[_0xa9f2[56]](_0xa9f2[54], _0xa9f2[60]);
+    navBar[_0xa9f2[35]][_0xa9f2[52]](...[_0xa9f2[57], _0xa9f2[58]]);
+    navBar[_0xa9f2[35]][_0xa9f2[34]](...[_0xa9f2[61], _0xa9f2[62]]);
+    document[_0xa9f2[63]][_0xa9f2[35]][_0xa9f2[34]](_0xa9f2[44]);
   } else {
-    navBar[_0x6eb6[36]][_0x6eb6[53]](...[_0x6eb6[62], _0x6eb6[63]]);
+    navBar[_0xa9f2[35]][_0xa9f2[52]](...[_0xa9f2[61], _0xa9f2[62]]);
     initialization();
-    document[_0x6eb6[64]][_0x6eb6[36]][_0x6eb6[53]](_0x6eb6[45]);
+    document[_0xa9f2[63]][_0xa9f2[35]][_0xa9f2[52]](_0xa9f2[44]);
   }
 }
-const contentArr = [_0x6eb6[65], _0x6eb6[66], _0x6eb6[67]];
+const contentArr = [_0xa9f2[64], _0xa9f2[65], _0xa9f2[66]];
 let textString;
 let flag = false;
 let index = 0;
@@ -183,10 +183,10 @@ let speed = 400;
 let i = 0;
 const typing = () => {
   if (flag) {
-    textString = contentArr[index][_0x6eb6[68]](0, i);
-    typeEl[_0x6eb6[69]] = textString;
+    textString = contentArr[index][_0xa9f2[67]](0, i);
+    typeEl[_0xa9f2[68]] = textString;
     i--;
-    if (textString === _0x6eb6[33]) {
+    if (textString === _0xa9f2[32]) {
       flag = false;
       speed *= 8;
       if (index >= 0 && index < 2) {
@@ -198,8 +198,8 @@ const typing = () => {
       }
     }
   } else {
-    textString = contentArr[index][_0x6eb6[68]](0, i);
-    typeEl[_0x6eb6[69]] = textString;
+    textString = contentArr[index][_0xa9f2[67]](0, i);
+    typeEl[_0xa9f2[68]] = textString;
     i++;
     if (textString === contentArr[index]) {
       flag = true;
@@ -208,51 +208,64 @@ const typing = () => {
   }
 };
 var myVar = setInterval(typing, speed);
-nextButton[_0x6eb6[25]](_0x6eb6[70], () => {
-  const _0x79c0x20 = slide[_0x6eb6[71]];
-  slidesContainer[_0x6eb6[72]] += _0x79c0x20;
+nextButton[_0xa9f2[24]](_0xa9f2[69], () => {
+  const _0xc7fex1f = slide[_0xa9f2[70]];
+  slidesContainer[_0xa9f2[71]] += _0xc7fex1f;
 });
-prevButton[_0x6eb6[25]](_0x6eb6[70], () => {
-  const _0x79c0x20 = slide[_0x6eb6[71]];
-  slidesContainer[_0x6eb6[72]] -= _0x79c0x20;
+prevButton[_0xa9f2[24]](_0xa9f2[69], () => {
+  const _0xc7fex1f = slide[_0xa9f2[70]];
+  slidesContainer[_0xa9f2[71]] -= _0xc7fex1f;
 });
-function sendEmail({ name, email, message }) {
-  fetch(_0x6eb6[82], {
-    method: _0x6eb6[83],
-    mode: _0x6eb6[84],
-    cache: _0x6eb6[85],
-    body: JSON[_0x6eb6[86]]({ name, email, message }),
-  })
-    [_0x6eb6[81]](() => {
-      formSubmitStatus[_0x6eb6[57]](_0x6eb6[73], _0x6eb6[78]);
-      formSubmitStatus[_0x6eb6[26]] = _0x6eb6[79];
-      contactForm[_0x6eb6[80]]();
-    })
-    [_0x6eb6[77]]((_0x79c0x25) => {
-      formSubmitStatus[_0x6eb6[57]](_0x6eb6[73], _0x6eb6[74]);
-      formSubmitStatus[_0x6eb6[26]] = _0x6eb6[75];
-      console[_0x6eb6[76]](_0x79c0x25);
-    });
-}
-formSubmitBtn[_0x6eb6[25]](_0x6eb6[70], (_0x79c0xf) => {
-  _0x79c0xf[_0x6eb6[87]]();
-  const _0x79c0x26 = document[_0x6eb6[88]][_0x6eb6[10]];
-  const _0x79c0x27 = new FormData(_0x79c0x26);
-  const _0x79c0x28 = {
-    name:
-      _0x6eb6[33] +
-      _0x79c0x27[_0x6eb6[90]](_0x6eb6[89]) +
-      _0x6eb6[91] +
-      _0x79c0x27[_0x6eb6[90]](_0x6eb6[92]) +
-      _0x6eb6[33],
-    email: _0x79c0x27[_0x6eb6[90]](_0x6eb6[93]),
-    message: _0x79c0x27[_0x6eb6[90]](_0x6eb6[94]),
-  };
-  const _0x79c0x29 = _0x79c0x27[_0x6eb6[90]](_0x6eb6[95]);
-  if (_0x79c0x29) {
-    console[_0x6eb6[97]](_0x6eb6[96]);
+function sendEmail(_0xc7fex21) {
+  if (
+    !_0xc7fex21[_0xa9f2[73]][_0xa9f2[72]]() ||
+    !_0xc7fex21[_0xa9f2[74]][_0xa9f2[72]]() ||
+    !_0xc7fex21[_0xa9f2[75]][_0xa9f2[72]]()
+  ) {
+    formSubmitStatus[_0xa9f2[56]](_0xa9f2[76], _0xa9f2[77]);
+    formSubmitStatus[_0xa9f2[25]] = _0xa9f2[78];
     return;
   }
-  sendEmail(_0x79c0x28);
-  console[_0x6eb6[97]](_0x79c0x28);
+  fetch(_0xa9f2[86], {
+    method: _0xa9f2[87],
+    mode: _0xa9f2[88],
+    cache: _0xa9f2[89],
+    body: JSON[_0xa9f2[90]]({
+      name: _0xc7fex21[_0xa9f2[73]],
+      email: _0xc7fex21[_0xa9f2[74]],
+      message: _0xc7fex21[_0xa9f2[75]],
+    }),
+  })
+    [_0xa9f2[85]](() => {
+      formSubmitStatus[_0xa9f2[56]](_0xa9f2[76], _0xa9f2[82]);
+      formSubmitStatus[_0xa9f2[25]] = _0xa9f2[83];
+      contactForm[_0xa9f2[84]]();
+    })
+    [_0xa9f2[81]]((_0xc7fex22) => {
+      formSubmitStatus[_0xa9f2[56]](_0xa9f2[76], _0xa9f2[77]);
+      formSubmitStatus[_0xa9f2[25]] = _0xa9f2[79];
+      console[_0xa9f2[80]](_0xc7fex22);
+    });
+}
+contactForm[_0xa9f2[24]](_0xa9f2[91], (_0xc7fexe) => {
+  _0xc7fexe[_0xa9f2[92]]();
+  const _0xc7fex23 = new FormData(_0xc7fexe[_0xa9f2[18]]);
+  const _0xc7fex24 = {
+    name:
+      _0xa9f2[32] +
+      (_0xc7fex23[_0xa9f2[94]](_0xa9f2[93])
+        ? _0xc7fex23[_0xa9f2[94]](_0xa9f2[93]) + _0xa9f2[95]
+        : _0xa9f2[32]) +
+      _0xa9f2[32] +
+      _0xc7fex23[_0xa9f2[94]](_0xa9f2[96]) +
+      _0xa9f2[32],
+    email: _0xc7fex23[_0xa9f2[94]](_0xa9f2[97]),
+    message: _0xc7fex23[_0xa9f2[94]](_0xa9f2[75]),
+  };
+  const _0xc7fex25 = _0xc7fex23[_0xa9f2[94]](_0xa9f2[74]);
+  if (_0xc7fex25) {
+    console[_0xa9f2[99]](_0xa9f2[98]);
+    return;
+  }
+  sendEmail(_0xc7fex24);
 });

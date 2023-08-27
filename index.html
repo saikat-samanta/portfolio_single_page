@@ -655,17 +655,17 @@
             width="400px"
           />
           <form
-            class="contact_form d-flex flex-column justify-content-evenly"
+            class="d-flex flex-column justify-content-evenly"
             id="contact_form"
           >
             <div class="form_name">
               <div class="input_area">
                 <input type="text" name="first_name" id="first_name" required />
-                <span>First Name</span>
+                <span>First Name*</span>
               </div>
               <div class="input_area">
                 <input type="text" name="last_name" id="last_name" required />
-                <span>Last Name</span>
+                <span>Last Name*</span>
               </div>
             </div>
             <div class="input_area spam_email">
@@ -674,14 +674,14 @@
             </div>
             <div class="input_area">
               <input type="email" name="my_email" id="my_email" required />
-              <span>Email</span>
+              <span>Email*</span>
             </div>
             <div class="input_area">
               <textarea name="message" id="text_area" required></textarea>
-              <span>Write Your Message</span>
+              <span>Write Your Message*</span>
             </div>
             <span id="email_response_status"></span>
-            <input type="submit" value="SUBMIT" id="submit-contact-msg" />
+            <input type="submit" value="SUBMIT" />
           </form>
         </div>
       </div>

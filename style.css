@@ -307,7 +307,7 @@ section {
   -webkit-filter: opacity(0.2);
 }
 
-.contact_form {
+#contact_form {
   height: 80%;
   position: absolute;
   top: 50%;
@@ -383,7 +383,7 @@ section {
   border-bottom: 2px solid green;
 }
 
-.from_area .contact_form input[type="submit"] {
+.from_area #contact_form input[type="submit"] {
   width: 100px;
   height: 40px;
   margin-left: 10px;
@@ -399,7 +399,7 @@ section {
   outline: none;
   box-shadow: -2px 2px 2px rgb(224, 224, 224), -7px 7px 2px rgb(138, 138, 138);
 }
-.from_area .contact_form input[type="submit"]:hover {
+.from_area #contact_form input[type="submit"]:hover {
   box-shadow: -3px 3px 5px rgb(214, 214, 214), -3px 3px 10px rgb(102, 102, 102),
     inset -3px 3px 5px rgb(214, 214, 214),
     inset -3px 3px 10px rgb(102, 102, 102);
@@ -418,7 +418,7 @@ section {
   .input_area {
     margin-bottom: 0;
   }
-  .contact_form {
+  #contact_form {
     height: auto;
     position: relative;
     top: 0%;
@@ -430,7 +430,7 @@ section {
     -ms-transform: none;
     -o-transform: none;
   }
-  .contact_form .form_name {
+  #contact_form .form_name {
     display: flex;
     width: 98%;
   }
