@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://www.saikatsamanta.me/sitemap.xml
+Sitemap: https://saikatsamanta.me/sitemap.xml
