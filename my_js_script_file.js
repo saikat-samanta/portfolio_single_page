@@ -70,7 +70,10 @@ AOS.init({
 ////////////// # On document load ////////////////
 
 document.addEventListener("DOMContentLoaded", (ev) => {
-  const darkModeState = localStorage.getItem("isDarkMode");
+  let darkModeState = localStorage.getItem("isDarkMode");
+  if (!darkModeState) {
+    darkModeState = "true";
+  }
   document.getElementById("dark_mode").checked = JSON.parse(darkModeState);
   setDarkMode();
 });
