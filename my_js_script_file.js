@@ -70,10 +70,7 @@ AOS.init({
 ////////////// # On document load ////////////////
 
 document.addEventListener("DOMContentLoaded", (ev) => {
-  let darkModeState = localStorage.getItem("isDarkMode");
-  if (!darkModeState) {
-    darkModeState = "true";
-  }
+  const darkModeState = localStorage.getItem("isDarkMode");
   document.getElementById("dark_mode").checked = JSON.parse(darkModeState);
   setDarkMode();
 });
@@ -103,6 +100,10 @@ window.onscroll = () => {
 function initialization() {
   logo.setAttribute("src", "./assets/Saikat_dark.png");
   navBar.classList.add(...["bg-light", "navbar-light"]);
+  let isDark = localStorage.getItem("isDarkMode");
+  if (!isDark) {
+    localStorage.setItem("isDarkMode", "true");
+  }
 }
 initialization();
 
