@@ -2,6 +2,7 @@
 "use strict";
 
 ////////////// # selecting elements //////////////////
+const root = document.getElementById("root");
 const logo = document.getElementById("portfolio_logo");
 const navBar = document.querySelector(".navbar");
 const typeEl = document.querySelector(".type");
@@ -40,8 +41,13 @@ document.addEventListener("readystatechange", (event) => {
       "color: blue",
       "font-size: 30px"
     );
+    root.classList.add("dom_loaded");
   }
 });
+
+////////////// # Scroll to the element with specified id ///////////////
+
+const scrollToElement = (id) => document.getElementById(id).scrollIntoView();
 
 //////////// # Inserting Footer year ///////////////
 
